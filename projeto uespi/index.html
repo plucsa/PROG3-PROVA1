@@ -23,6 +23,17 @@
                         <li><a href="#contact">contato</a></li>
                     </ul>
                 </div>
+
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#service">Serviços</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">contato</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="call">
                 <div class="left">
@@ -31,9 +42,10 @@
                 <div class="right">
                     <h1 class="color-laranja text-gd">Naruto Restaurante</h1>
                     <h2 class="color-cinza-1 text-md">Experimente a melhor comida da região</h2>
-                    <p class="text-pq">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Iusto, esse impedit! Totam saepe dolorem provident.</p>
-                    <button>Ver menu</button>
+                    <p class="text-pq">Bem-vindo ao nosso paraíso do ramen, onde cada tigela é uma jornada culinária
+                        inesquecível. No nosso restaurante, elevamos o ramen a um nível superior, oferecendo uma
+                        experiência que combina tradição e inovação.</p>
+                    <a href="index-2.html"><button>Ver menu</button></a>
                 </div>
             </div>
         </div>
@@ -50,9 +62,13 @@
                 <div class="left">
                     <span class="text-title color-laranja">Sobre nós</span>
                     <h2 class="text-md color-cinza-1">Nós cozinhamos a comida mais saborosa</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Odio magni eveniet vitae aperiam possimus consequuntur a minima sint cupiditate veniam, placeat
-                        facilis illo impedit, voluptates eaque? Enim natus vitae harum!</p>
+                    <p>Nossos mestres da culinária dedicam horas cuidadosas para criar o caldo perfeito, infundido com
+                        sabores profundos e aromas tentadores. Cada tigela é uma obra de arte, adornada com ingredientes
+                        frescos e coloridos que transformam o ramen em uma explosão de cores e sabores.
+
+                        Nosso menu é uma viagem pelas diversas variedades de ramen, desde o clássico shoyu até opções
+                        mais ousadas e exclusivas. Seja você um amante da carne, um vegano dedicado ou um explorador de
+                        sabores, temos uma opção de ramen que irá satisfazer seu paladar</p>
                     <button>Saiba Mais</button>
                 </div>
                 <div class="right">
@@ -77,17 +93,20 @@
                     <div class="box">
                         <i class="fa fa-cutlery text-gd color-laranja"></i>
                         <h2>A melhor comida</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, eum.</p>
+                        <p>Aqui, na nossa cozinha, dedicamo-nos a criar a melhor comida que você já provou. Cada prato é
+                            uma obra-prima de sabor e paixão culinária. Venha saborear o que há de melhor.</p>
                     </div>
                     <div class="box">
                         <i class="fa-solid fa-pizza-slice text-gd color-laranja"></i>
                         <h2>Comida rápida</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quod.</p>
+                        <p>Refeições deliciosas em minutos! Desfrute do sabor da praticidade com nossos pratos de
+                            preparo rápido. Coma bem, sem perder tempo.</p>
                     </div>
                     <div class="box">
                         <i class="fa fa-motorcycle text-gd color-laranja"></i>
                         <h2>Entrega</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam?</p>
+                        <p> Entrega relâmpago! Receba sua comida quentinha em tempo recorde. Rápido e delicioso,
+                            direto na sua porta.</p>
                     </div>
                 </div>
             </div>
@@ -134,11 +153,10 @@
                 <div class="left">
                     <span class="text-title color-laranja">App</span>
                     <h2 class="text-md color-cinza-1">O aplicativo está dísponivel</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, magni? Quae dolor ratione
-                        voluptatum
-                        rerum laborum deserunt rem molestias repudiandae, quaerat exercitationem architecto eius,
-                        dolorem
-                        eos quasi. Id, veniam iure.</p>
+                    <p>Nosso aplicativo de restaurante é a sua porta de entrada para uma experiência gastronômica
+                        excepcional. Projetado com carinho para você, oferecemos uma plataforma que vai além do simples
+                        pedido de comida.
+                    </p>
                     <div class="info">
                         <img src="image/appel.png" alt="">
                         <img src="image/google.png" alt="">
@@ -150,6 +168,7 @@
             </div>
         </div>
     </section>
+
 
     <footer>
         <div class="container">
@@ -164,6 +183,15 @@
         btn.addEventListener("click", function () {
             window.scrollTo(0, 0);
         })
+
+        function myFunction() {
+            var x = document.getElementById("myLinks")
+            if (x.style.display === "block") {
+                x.style.display = "none"
+            } else {
+                x.style.display = "block"
+            }
+        }
     </script>
 </body>
 

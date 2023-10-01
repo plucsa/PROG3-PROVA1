@@ -186,6 +186,46 @@ button:hover{
 
 }
 
+
+.mobile-menu{
+    width: 95%;
+    height: auto;
+    position: absolute;
+    top: 5px;
+    background: #dcdcdc;
+    display: none;
+}
+
+.mobile-menu i{
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    font-size: 23px
+}
+
+.mobile-menu ul{
+
+    display: block;
+    text-align: center;
+}
+
+.mobile-menu ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.mobile-menu ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.mobile-menu ul li a:hover{
+    color: #fa5e00;
+}
+
+
 #back-to-top{
     position: fixed;
     bottom: 2px;
@@ -356,4 +396,177 @@ footer .container img{
 
 footer .container p{
     font-weight: 600;
+}
+
+@media screen and (max-width: 922px){
+
+.text-gd{
+    font-size: 54px;
+}
+
+.text-md{
+    font-size: 28px;
+}
+
+.text-pq{
+    font-size: 13px;
+}
+
+.text-title{
+    font-size: 18px;
+    }
+}
+
+@media screen  and (max-width: 740px) {
+
+.desktop-menu ul{
+    display: none;
+}
+
+.mobile-menu{
+    display: block;
+
+}
+.text-gd{
+    font-size: 42px;
+
+}
+
+.text-title{
+    font-size: 16px;
+}
+
+.titulo{
+    min-height: 150px;
+}
+
+.down{
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.left{
+    width: 100%;
+    min-height: 300px;
+}
+.right{
+    width: 100%;
+    min-height: 300px;
+}
+
+.box{
+    width: 95%;
+}
+
+.call{
+    flex-direction: column;
+}
+
+img{
+    width: 60%;
+}
+
+
+#home .right{
+    align-items: center;
+}
+#home .right h1{
+    text-align: center;
+
+}
+#home .right h2{
+    text-align: center;
+
+}
+#home .right p{
+    text-align: center;
+
+}
+
+#about .left{
+    align-items: center;
+}
+
+#about .left h2{
+    text-align: center;
+
+}
+
+#about .left p{
+    text-align: center;
+
+}
+
+#about .right{
+    align-items: center;
+
+}
+
+
+#menu .box img{
+    width: 25%;
+    margin-top: 20px;
+}
+
+#menu .box h2{
+    margin-top: 10px;
+}
+
+#menu .box p{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+#contact .right img{
+    margin-top: 60px;
+}
+footer .container{
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 150px;
+}
+footer .container p{
+    margin-top: 20px;
+}
+}
+
+@media screen and (max-width: 740px){
+.logo{
+    width: 110px;
+    top: 5px;
+}
+
+#about .right{
+    margin-top: 80px;
+}
+
+#about .right img{
+    width: 60%;
+}
+
+#menu h2{
+    font-size: 18px;
+}
+#menu .box p{
+    font-size: 14px;
+}
+#menu .box text-md{
+    font-size: 14px;
+}
+
+#service .box i{
+    border: 3px solid #2b2b2b;
+    border-radius: 25px;
+    padding: 20px;
+    margin-top: 10px;
+}
+#service .box h2{
+    font-size: 18px;
+}
+#service .box p{
+    font-size: 14px;
+}
 }
